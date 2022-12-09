@@ -23,3 +23,7 @@ theme = "src/theme"
 
 - Test with `mdbook serve` on local host.
 
+# Credits
+- The color choice is inspired from https://demo.diasporamemory.com/
+- The fonts and cover page is inspired from https://ipythonbook.com/
+
