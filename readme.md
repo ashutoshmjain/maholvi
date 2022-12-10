@@ -5,9 +5,9 @@
 - Coal
 - Rust
 
-They are all awesome but if you are individual publisher, it gets hard to test your published work in four different themes , given a multitude of browser/device combinations. And it becomes even more important if you want to deliver your work in a specific theme. 
+They are all great but if you are an individual publisher, it gets hard to test your published work in five different themes . Given a multitude of browser/device combinations, it is a lot of work for a writer to review her work in five different themes and to fine-tune them to suit the needs of the publication. Too much choice :-)
 
-Yellow theme, makes all the theme choice point to a single theme with yellow back-ground with black standard book fonts. 
+Yellow theme, makes all the theme choices point to a single theme with yellow `#f9ce00` back-ground, with black `Gentium Book Basic` from Google fonts. 
 
 You can view a usage of this theme at https://gita.shutri.com
 
