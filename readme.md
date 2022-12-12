@@ -14,11 +14,12 @@ You can view a usage of this theme at https://gita.shutri.com
 How to install - 
 
 - Download the `theme and fonts` folder in `src` folder of your book --> you may git clone this repo and copy paste.
+- Replace the favicon.png in `theme` folder with yours.
 - Point your book.toml to this new theme
+
 ```
 [output.html]
 theme = "src/theme"
-
 ```
 
 - Test with `mdbook serve` on local host.
