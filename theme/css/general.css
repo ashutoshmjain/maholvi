@@ -1,29 +1,145 @@
+/* Custom shizz */
+
+/* Kalam */
+@font-face {
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Kalam-Bold.ttf') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Kalam-Regular.ttf') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Kalam';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/Kalam-Light.ttf') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kalam';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/Kalam-Bold.ttf') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Kalam';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/Kalam-Regular.ttf') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Kalam';
+  font-style: italic;
+  font-weight: 300;
+  src: url('../fonts/Kalam-Light.ttf') format('woff2');
+  font-display: swap;
+}
+
 /* Base styles and content styles */
 
 @import 'variables.css';
 
 :root {
     /* Browser default font-size is 16px, this way 1 rem = 10px */
-    font-size: 62.5%;
+    font-size: 75.5%;
 }
 
 html {
-    font-family: "Open Sans", sans-serif;
+    font-family: Kalam, "Open Sans", sans-serif;
     color: var(--fg);
     background-color: var(--bg);
     text-size-adjust: none;
+    font-size: 0.8em;
 }
+
 
 body {
     margin: 0;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     overflow-x: hidden;
 }
 
-code {
-    font-family: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace !important;
-    font-size: 0.875em; /* please adjust the ace font size accordingly in editor.js */
+pre.output {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */  
+    color: var(--bg);
+    background-color: var(--fg);
+    font-family: Kalam, "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace !important;
+    font-size: 0.666em;
+    padding: 0.5em;
+    margin: 3rem 0;
+    border-radius: 4px;
 }
+
+code {
+    font-family: Kalam, "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace !important;
+    font-size: 1em;
+    margin: 3rem 0;
+    border-radius: 4px;
+}
+
+
+@media screen and ( max-width: 1024px ) {
+  img.responsive { width: 600px; }
+}
+@media (max-width: 480px) {
+  img.responsive { width: 300px; }
+}
+img.responsive {
+  margin: 2rem 0;
+  height: auto;
+}
+
+.cover-huge {
+    font-size: 6rem;
+    text-align: center;
+}
+
+.cover-medium {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.cover-small {
+    margin-top: 4rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+}
+
+.smallcaps {
+  font-variant: small-caps;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+/* The size is too damn high */
+h1 { font-size: 1.5em;   }
+h2 { font-size: 1.125em; }
+h3 { font-size: 0.85em;  }
+h4 { font-size: 0.64em;  }
 
 /* Don't change font size in headers. */
 h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
@@ -45,23 +161,20 @@ h4, h5 { margin-top: 2em; }
     margin-top: 1em;
 }
 
-h1:target::before,
-h2:target::before,
-h3:target::before,
-h4:target::before,
-h5:target::before,
-h6:target::before {
+h1 a.header:target::before,
+h2 a.header:target::before,
+h3 a.header:target::before,
+h4 a.header:target::before {
     display: inline-block;
     content: "»";
     margin-left: -30px;
     width: 30px;
 }
 
-/* This is broken on Safari as of version 14, but is fixed
-   in Safari Technology Preview 117 which I think will be Safari 14.2.
-   https://bugs.webkit.org/show_bug.cgi?id=218076
-*/
-:target {
+h1 a.header:target,
+h2 a.header:target,
+h3 a.header:target,
+h4 a.header:target {
     scroll-margin-top: calc(var(--menu-bar-height) + 0.5em);
 }
 
@@ -92,7 +205,7 @@ h6:target::before {
 .content ul { line-height: 1.45em; }
 .content a { text-decoration: none; }
 .content a:hover { text-decoration: underline; }
-.content img, .content video { max-width: 100%; }
+.content img { max-width: 100%; }
 .content .header:link,
 .content .header:visited {
     color: var(--fg);
@@ -100,6 +213,16 @@ h6:target::before {
 .content .header:link,
 .content .header:visited:hover {
     text-decoration: none;
+}
+
+a.bmc-btn:active,
+a.bmc-btn:link, 
+a.bmc-btn:visited {
+    color: #ffffff !important;
+}
+
+a.bmc-btn:hover {
+    color: #ffeb3b !important;
 }
 
 table {
@@ -138,14 +261,21 @@ blockquote {
     border-bottom: .1em solid var(--quote-border);
 }
 
+sup.footnote-reference {
+    vertical-align: unset;
+    font-size: .7em;
+    position: relative;
+    bottom: 0.7em;
+    right: 0.3em;
+}
 
 :not(.footnote-definition) + .footnote-definition,
 .footnote-definition + :not(.footnote-definition) {
     margin-top: 2em;
 }
 .footnote-definition {
-    font-size: 0.9em;
-    margin: 0.5em 0;
+    font-size: 0.8em;
+    line-height: 0;
 }
 .footnote-definition p {
     display: inline;
@@ -170,12 +300,13 @@ blockquote {
     visibility: visible;
 }
 
+.chapter {
+    font-family: Kalam, "Open Sans", sans-serif;
+    font-size: 0.8em;
+}
+
 .chapter li.part-title {
     color: var(--sidebar-fg);
     margin: 5px 0px;
     font-weight: bold;
-}
-
-.result-no-output {
-    font-style: italic;
 }
