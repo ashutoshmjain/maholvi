@@ -5,7 +5,7 @@
 - Coal
 - Rust
 
-They are all great but if you are an individual publisher, it gets hard to test your published work in five different themes . Given a multitude of browser/device combinations, it is a lot of work for a single writer to review her work in five different typographies and to fine-tune them to suit the needs of the publication. Too much choice :-)
+They are all pretty cool but if you are an individual publisher, it gets hard to test your published work in five different themes . Given a multitude of browser/device combinations, it is a lot of work for a single writer to review her work in five different typographies and to fine-tune them to suit the needs of the publication. Too much choice :-)
 
 Yellow theme, makes all the theme choices point to a single theme with yellow `#f9ce00` back-ground, with black `Kalam` fonts from `Indian Type Foundry`. Fonts are available for free download or direct embed at [google Fonts](https://fonts.google.com/specimen/Kalam?query=Indian+Type+Foundry&noto.script=Deva)
 
