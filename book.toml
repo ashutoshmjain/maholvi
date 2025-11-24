@@ -2,7 +2,6 @@
 
 authors = ["madan maholvi"]
 language = "en"
-multilingual = false
 src = "src"
 title = "महोलवी नामा "
 
