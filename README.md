@@ -18,6 +18,8 @@ The complete table of contents, detailing all poems and their arrangement, can b
 
 ## Building the Book
 
+This project is configured for automated deployment to GitHub Pages via GitHub Actions.
+
 This book is built using `mdBook`, a command-line tool to create books from Markdown files. To view or build the book locally:
 
 1.  **Install `mdBook`**: If you don't have `mdBook` installed, you can get it via `cargo`:
