@@ -8,7 +8,7 @@ title = "महोलवी नामा "
 
 [output.html]
 
-cname = "poems.shutri.com"
+cname = "maholvi.shutri.com"
 no-section-label = true
 
 [output.html.print]
