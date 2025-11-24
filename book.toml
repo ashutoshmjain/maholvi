@@ -1,0 +1,16 @@
+[book]
+
+authors = ["madan maholvi"]
+language = "en"
+multilingual = false
+src = "src"
+title = "महोलवी नामा "
+
+[output.html]
+
+cname = "poems.shutri.com"
+no-section-label = true
+
+[output.html.print]
+enable = false    # include support for printable output
+
