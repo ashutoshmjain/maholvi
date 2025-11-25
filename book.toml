@@ -6,6 +6,7 @@ src = "src"
 title = "महोलवी नामा "
 
 [output.html]
+additional-css = ["css/custom.css"]
 
 cname = "maholvi.shutri.com"
 no-section-label = true
