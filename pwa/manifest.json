@@ -1,0 +1,24 @@
+{
+  "id": "maholvi-pwa",
+  "name": "Maholvi Nama",
+  "short_name": "Maholvi Nama",
+  "description": "The life and works of Madan Maholvi",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#2e2e2e",
+  "theme_color": "#2e2e2e",
+  "icons": [
+    {
+      "src": "icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

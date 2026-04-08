@@ -1,0 +1,12 @@
+{
+  "name": "maholvi-nama",
+  "version": "1.0.0",
+  "description": "The life and works of Madan Maholvi",
+  "scripts": {
+    "build:pwa": "mdbook build && cp pwa/manifest.json pwa/sw-register.js book/ && cp -r pwa/icons book/ && ./node_modules/.bin/workbox injectManifest workbox-config.js",
+    "serve:pwa": "python3 -m http.server -d book 8000"
+  },
+  "devDependencies": {
+    "workbox-cli": "^7.4.0"
+  }
+}
