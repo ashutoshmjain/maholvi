@@ -3,28 +3,6 @@
     <head>
     <link rel="manifest" href="manifest.json">
     <script src="sw-register.js"></script>
-    <script>
-        // Reading Persistence Script
-        (function() {
-            const storageKey = 'deepdive-last-read';
-            const currentPath = window.location.pathname;
-            
-            // Don't save if we are on the homepage or cover
-            if (!currentPath.endsWith('/') && !currentPath.endsWith('index.html') && !currentPath.endsWith('cover.html')) {
-                localStorage.setItem(storageKey, window.location.href);
-            }
-
-            // If we are on the homepage, check if we should redirect
-            if (currentPath.endsWith('/') || currentPath.endsWith('index.html')) {
-                const lastRead = localStorage.getItem(storageKey);
-                if (lastRead && lastRead !== window.location.href) {
-                    // Optional: You can make this an automatic redirect or a "Resume Reading" button.
-                    // For now, let's do an automatic redirect for a seamless PWA experience.
-                    window.location.href = lastRead;
-                }
-            }
-        })();
-    </script>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>{{ title }}</title>
