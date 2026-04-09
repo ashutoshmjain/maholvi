@@ -2,6 +2,9 @@
 <html lang="{{ language }}" class="{{ default_theme }} sidebar-visible" dir="{{ text_direction }}">
     <head>
     <link rel="manifest" href="manifest.json">
+    <script>
+        window.rootPath = "{{ path_to_root }}";
+    </script>
     <script src="sw-register.js"></script>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">

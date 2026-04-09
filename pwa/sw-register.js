@@ -107,7 +107,11 @@ window.addEventListener('appinstalled', (evt) => {
 // 6. Service Worker Registration logic
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    const swPath = (window.rootPath || '') + 'sw.js';
+    let swPath = (window.rootPath || '') + 'sw.js';
+    // Ensure swPath is correct even if rootPath is './' or empty
+    if (swPath.startsWith('./')) swPath = swPath.substring(2);
+    if (window.rootPath === './' || !window.rootPath) swPath = 'sw.js';
+    
     navigator.serviceWorker.register(swPath).then(registration => {
       console.log('SW registered: ', registration);
     }).catch(registrationError => {
