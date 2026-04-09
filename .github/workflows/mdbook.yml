@@ -22,9 +22,6 @@ jobs:
         with:
           mdbook-version: 'latest'
 
-      - name: Install mdbook-katex
-        run: cargo install mdbook-katex
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:

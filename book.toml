@@ -5,8 +5,6 @@ src = "src"
 title = "महोलवी नामा "
 description = "The life and works of Madan Maholvi"
 
-[preprocessor.katex]
-
 [output.html]
 theme = "theme"
 additional-css = ["css/custom.css"]
