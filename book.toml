@@ -1,5 +1,16 @@
 [book]
-authors = ["ashutosh jain"]
+authors = ["madan maholvi"]
 language = "en"
 src = "src"
-title = "maholvi nama"
+title = "महोलवी नामा "
+
+[preprocessor.katex]
+
+[output.html]
+theme = "theme"
+additional-css = ["css/custom.css"]
+cname = "maholvi.shutri.com"
+no-section-label = true
+
+[output.html.print]
+enable = false
