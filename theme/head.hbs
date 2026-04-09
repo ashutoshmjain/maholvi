@@ -1,0 +1,20 @@
+<script>
+  window.rootPath = "{{ path_to_root }}";
+  (function() {
+    const key = 'maholvi_last_read';
+    const currentUrl = window.location.href;
+    const isRoot = window.location.pathname === '/' || window.location.pathname.endsWith('/index.html') || window.location.pathname.endsWith('/');
+    
+    if (isRoot) {
+      const lastRead = localStorage.getItem(key);
+      if (lastRead && lastRead !== currentUrl) {
+        window.location.href = lastRead;
+      }
+    } else {
+      localStorage.setItem(key, currentUrl);
+    }
+  })();
+</script>
+<link rel="manifest" href="{{ path_to_root }}manifest.json">
+<link rel="apple-touch-icon" href="{{ path_to_root }}icons/icon-192x192.png">
+<script src="{{ path_to_root }}sw-register.js"></script>
