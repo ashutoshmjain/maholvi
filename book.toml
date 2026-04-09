@@ -3,6 +3,7 @@ authors = ["madan maholvi"]
 language = "en"
 src = "src"
 title = "महोलवी नामा "
+description = "The life and works of Madan Maholvi"
 
 [preprocessor.katex]
 
