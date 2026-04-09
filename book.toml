@@ -1,17 +1,5 @@
 [book]
-
-authors = ["madan maholvi"]
+authors = ["ashutosh jain"]
 language = "en"
 src = "src"
-title = "महोलवी नामा "
-
-[output.html]
-theme = "theme"
-additional-css = ["css/custom.css"]
-
-cname = "maholvi.shutri.com"
-no-section-label = true
-
-[output.html.print]
-enable = false    # include support for printable output
-
+title = "maholvi nama"
