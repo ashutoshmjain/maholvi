@@ -6,7 +6,6 @@ title = "महोलवी नामा "
 description = "The life and works of Madan Maholvi"
 
 [output.html]
-theme = "theme"
 additional-css = ["css/custom.css"]
 cname = "maholvi.shutri.com"
 no-section-label = true
