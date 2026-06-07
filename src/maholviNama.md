@@ -24,6 +24,6 @@
 
 <h2><strong>Madan Maholvi</strong></h2>
 
-<h4>1936 - 2005</h4>
+<h4>1936 &mdash; 2005</h4>
 
 </div>
