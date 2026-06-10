@@ -4,9 +4,9 @@ This is a clean internet publication : a collection of Urdu and Hindi poems of `
 
 ## Navigation and icons:
 
-- cheeseburger on top left <i class="fa fa-fw fa-bars"></i> toggles the chapters' sidebar. On mobile devices, you may swap right. 
-- search the publication using the magnifying glass: <i class="fa fa-fw fa-search"></i> 
-- turn pages by clicking the left and right angles:<i class="fa fa-fw fa-angle-left"></i> <i class="fa fa-fw fa-angle-right"></i>. On mobile devices, the angles show up at the bottom of page.
+- cheeseburger on top left <i class="fa-solid fa-bars"></i> toggles the chapters' sidebar. On mobile devices, you may swap right. 
+- search the publication using the magnifying glass: <i class="fa-solid fa-magnifying-glass"></i> 
+- turn pages by clicking the left and right angles:<i class="fa-solid fa-angle-left"></i> <i class="fa-solid fa-angle-right"></i>. On mobile devices, the angles show up at the bottom of page.
 - you can also navigate with left and right arrows on keyboard.
 
 ## Clean internet 
